@@ -1,0 +1,83 @@
+.page-footer {
+  background-color: #ffffff;
+
+  &__wrapper {
+    width: 185px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo-link {
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 45px;
+    display: block;
+    &[href]:hover {
+      background-image: url("../img/logo-pink-footer-hover.svg");
+    }
+  }
+
+  &__social {
+    .list-reset();
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__copyright {
+    margin-bottom: 30px;
+  }
+
+  &__index {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {       ///////////////////////////////////
+
+      display: block;
+
+      &__wrapper {
+        width: 620px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+      }
+
+      &__social {
+        margin-top: 50px;
+        margin-left: -20px;
+      }
+
+      &__logo-link {
+        margin-top: 32px;
+      }
+    }
+
+  @media (min-width: @desktop-width) {
+
+      &__wrapper {
+        width: 940px;
+        margin: 0 auto;
+      }
+
+      &__logo-link {
+        background-image: url("../img/logo-pink-blue-desktop.svg");
+        &[href]:hover {
+          background-image: url("../img/logo-pink-blue-desktop-hover.svg");
+        }
+      }
+
+      &__social {
+        margin-left: 8px;
+      }
+
+      &__copyright {
+        padding: 0;
+      }
+    }
+  }

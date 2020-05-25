@@ -1,0 +1,40 @@
+.apps-list {
+  &__item {
+    background-repeat: no-repeat;
+    display: flex;
+
+    &--apple {
+      background-image: url("../img/logo-apple.svg");
+      width: 50px;
+      height: 60px;
+      margin-left: 19px;
+    }
+
+    &--android {
+      background-image: url("../img/logo-android.svg");
+      width: 43px;
+      height: 50px;
+    }
+
+    &--microsoft {
+      background-image: url("../img/logo-microsoft.svg");
+      width: 45px;
+      height: 45px;
+      margin-right: 18px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &__item--apple {
+      margin-left: 30px;
+    }
+
+    &__item--android {
+      margin-right: 5px;
+    }
+
+    &__item--microsoft {
+      margin-right: 30px;
+    }
+  }
+}

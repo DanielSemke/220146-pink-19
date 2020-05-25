@@ -1,0 +1,25 @@
+.question {
+  background-color: #ffffff;
+
+  &__wrapper {
+    width: 210px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__wrapper {
+      width: 630px;
+      margin: 0 auto;
+      padding-top: 52px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &__wrapper {
+      width: 830px;
+      margin: 0 auto;
+      padding-top: 66px;
+    }
+  }
+}
