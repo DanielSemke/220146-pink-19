@@ -1,0 +1,25 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+
+  &__hand-image {
+    background-image: none;
+    display: block;
+    padding-top: 108px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+
+    &__hand-image {
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+    &__hand-image {
+      margin: 0;
+    }
+  }
+}

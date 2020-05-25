@@ -1,0 +1,47 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    font-weight: normal;
+  }
+
+  &__image {
+    background-image: url("../../img/htmlacademy-red.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+
+  &__copyright-link {
+    margin-right: 50px;
+  }
+
+  @media (min-width: @tablet-width) {
+
+    padding-top: 35px;
+
+    &__text {
+      font-size: 15px;
+      line-height: 29px;
+    }
+
+    &__image {
+      margin-right: -7px;
+    }
+  }
+
+  @media (min-width: @desktop-width){
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__image {
+      margin-top: 0;
+    }
+  }
+}
