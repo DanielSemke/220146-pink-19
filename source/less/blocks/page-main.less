@@ -1,6 +1,8 @@
 .page-main {
   display: flex;
   flex-direction: column;
+  width: 280px;
+margin: 0 auto;
 
   &__hand-image {
     background-image: none;
@@ -10,6 +12,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 50px;
+    width: 620px;
 
     &__hand-image {
       background-repeat: no-repeat;
@@ -17,7 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
-
+    width: 1200px;
     &__hand-image {
       margin: 0;
     }
