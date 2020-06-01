@@ -49,7 +49,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("jsmin", function () {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/*.js")
     .pipe(jsmin())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest("build/js"));
