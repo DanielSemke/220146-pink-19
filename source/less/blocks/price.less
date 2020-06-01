@@ -45,7 +45,7 @@
   &__field-yes {
     display: inline-block;
     vertical-align: middle;
-    background-image: url("../../img/yes-yes.svg");
+    background-image: url("/img/yes-yes.svg");
     background-repeat: no-repeat;
     width: 30px;
     height: 25px;
@@ -55,7 +55,7 @@
   &__field-no {
     display: inline-block;
     vertical-align: middle;
-    background-image: url("../../img/no-no.svg");
+    background-image: url("/img/no-no.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 30px;
@@ -72,12 +72,33 @@
     margin: auto;
     padding-top: 15px;
     padding-bottom: 21px;
+    overflow: hidden;
+    position: relative;
   }
 
   &__titel-name {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
+  }
+
+  &__titel--hit {
+    &::after {
+    content: "хит";
+      position: absolute;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: lighter;
+      top: 11px;
+      left: -26px;
+      transform: rotate(-45deg);
+      color: #ffffff;
+      font-size: 14px;
+      text-transform: uppercase;
+      background-color: #d22856;
+      width: 102px;
+      height: 30px;
+    }
   }
 
   &__titel-money {
@@ -91,7 +112,7 @@
     padding-bottom: 35px;
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width){ ////////////////////////////////////////
     clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
     padding-top: 86px;
 
@@ -125,7 +146,6 @@
       margin-right: auto;
     }
 
-
     &__column--1 {
       display: table-cell;
     }
@@ -153,6 +173,15 @@
       padding-bottom: 8px;
     }
 
+    &__titel--hit {
+      &::after {
+        top: 0px;
+        left: -26px;
+        width: 84px;
+        height: 30px;
+      }
+    }
+
     &__titel-name {
       font-size: 16px;
       line-height: 30px;
@@ -172,7 +201,7 @@
     }
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) { ////////////////////////////////////////
     margin-bottom: 68px;
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
     padding-top: 147px;
@@ -197,6 +226,16 @@
       &__titel {
         padding-top: 15px;
         padding-bottom: 19px;
+      }
+
+      &__titel--hit {
+        &::after {
+        content: "хит";
+          top: 11px;
+          left: -26px;
+          width: 102px;
+          height: 30px;
+        }
       }
 
       &__titel-money {
